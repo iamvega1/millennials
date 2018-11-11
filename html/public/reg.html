@@ -1,0 +1,75 @@
+<div class="modal fade" id="Registro" role="dialog">
+   <div class="modal-dialog">
+
+
+     <div class="modal-content">
+
+     
+     
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Registro</h4>
+       </div>
+       <div class="modal-body">
+         <div  role="form" onkeypress="return runScriptReg(event)">
+           <div class="form-group">
+             <label for="usrnick"><span class="glyphicon glyphicon-user"></span> Usuario o nick</label>
+             <input type="text" class="form-control" id="user_reg" placeholder="Introduce un nombre de usuario">
+           </div>
+           <div class="form-group">
+             sel
+           </div>
+           <div class="form-group">
+             <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+             <input type="password" class="form-control" id="pass_reg" placeholder="Introduce tu contraseña">
+           </div>
+           <div class="form-group">
+             <label for="psw_two"><span class="glyphicon glyphicon-eye-open"></span> Repite tu Contraseña</label>
+             <input type="password" class="form-control" id="pass_reg_dos" placeholder="Introduce tu contraseña de nuevo">
+           </div>
+           <div class="form-group">
+             <label for="usrname"><span class="glyphicon glyphicon-list-alt"></span> Nombre</label>
+             <input type="text" class="form-control" id="user_name_reg" placeholder="Introduce tu nombre o nombres">
+           </div>
+           <div class="form-group">
+             <label for="usrape"><span class="glyphicon glyphicon-list-alt"></span> Apellido paterno</label>
+             <input type="text" class="form-control" id="user_ape_reg" placeholder="Introduce tu apellido paterno">
+           </div>
+           <div class="form-group">
+             <label for="usrmat"><span class="glyphicon glyphicon-list-alt"></span> Apellido materno</label>
+             <input type="text" class="form-control" id="user_mat_reg" placeholder="Introduce tu apellido materno">
+           </div>
+           <div class="form-group">
+             <label for="usrmat"><span class="glyphicon glyphicon-envelope"></span> Codigo postal</label>
+             <input type="number" class="form-control" id="user_cod_reg" placeholder="Introduce tu codigo postal">
+           </div>
+           <div class="form-group">
+                <label type='date'><span class="glyphicon glyphicon-calendar"></span> Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="user_date_reg" placeholder="Introduce tu fecha de nacimiento">
+            </div>
+           
+           <div class="form-group">
+           <label type="text"><span class="glyphicon glyphicon-user"> Sexo:</span></label> 
+            <div class="funkyradio">
+              <div class="funkyradio-default">
+                  <input type="radio" name="sexo" value="0" id="rbtnm" />
+                  <label for="rbtnm">Hombre</label>
+              </div>
+              <div class="funkyradio-primary">
+                  <input type="radio" name="sexo" value="1" id="rbtnh" checked/>
+                  <label for="rbtnh">Mujer</label>
+              </div>
+            </div>
+           </div>
+           <div id="_messages_info_"></div>
+           <button type="button" id="registrarme" onclick="goReg()" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Registrarme</button>
+
+           </div>
+           </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+<script src="views/app/js/reg.js"></script>
